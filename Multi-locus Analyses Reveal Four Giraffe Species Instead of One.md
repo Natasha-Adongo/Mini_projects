@@ -45,35 +45,3 @@ grep -c "^>" giraffe.fasta
 
 
 
-## **Challenges**  
-
-### Tree analyses  
-* **BEAST**  
-Error:
-```  
-OpenCL error: Unknown error from file </home/icipe/Downloads/beagle-lib/libhmsbeagle/GPU/GPUInterfaceOpenCL.cpp>, line 105.
-```  
-The error arised from installment errors of beagle-lib.
-
-* **Beagle-lib**  
-
-The error we faced with beagle-lib was failure of the tests:
-```  
-The following tests FAILED:
-	  1 - hmctest (Failed)
-Errors while running CTest
-make: *** [Makefile:97: test] Error 8
-``` 
-The problem is in the installation of beagle-lib. One of the solutions was to remove openCL and re-install it, unfortunately that failed to. Another solution was to remove beagle-lib and install it once more. For this, the path to openCL conflicted with the previous path to openCL despite any efforts to change the path.  
-
-* **MrBayes**  
-Due to the failure of BEAST, we substituted it with MrBayes, which perfoms the same function as BEAST, unfortunately it also failed as it too utilised beagle-lib  
-```  
-Running benchmarks to automatically select fastest BEAGLE resource... 
-OpenCL error: Unknown error from file </home/icipe/Downloads/beagle-lib/libhmsbeagle/GPU/GPUInterfaceOpenCL.cpp>, line 105.
-```  
-* **Tracer**  
-
-Tracer was not able to process the output file 
-
-
