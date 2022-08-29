@@ -68,5 +68,12 @@ The problem is in the installation of beagle-lib. One of the solutions was to re
 
 * **MrBayes**  
 Due to the failure of BEAST, we substituted it with MrBayes, which perfoms the same function as BEAST, unfortunately it also failed as it too utilised beagle-lib  
+```  
+Running benchmarks to automatically select fastest BEAGLE resource... 
+OpenCL error: Unknown error from file </home/icipe/Downloads/beagle-lib/libhmsbeagle/GPU/GPUInterfaceOpenCL.cpp>, line 105.
+```  
+* **Tracer**  
+
+Tracer was not able to process the output file 
 
 
